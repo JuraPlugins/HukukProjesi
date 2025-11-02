@@ -20,7 +20,7 @@ export function FirmValues() {
         {/* Thin gold separator placed below the values */}
         <div className="mx-auto mt-8 h-px w-24 bg-brand-gold/70" />
         {/* Scroll down button to İletişim below separator */}
-        <ScrollDownButton targetId="iletisim" />
+        <ScrollDownButton targetId="iletisim" label="Bize Ulaşın" />
       </div>
     </section>
   );

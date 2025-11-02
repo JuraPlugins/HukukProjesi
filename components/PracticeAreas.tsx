@@ -45,7 +45,7 @@ export function PracticeAreas() {
           ))}
         </div>
         {/* Section bottom scroll-down to About */}
-        <ScrollDownButton targetId="hakkimizda" />
+        <ScrollDownButton targetId="hakkimizda" label="Hakkımızda" />
       </div>
     </section>
   );

@@ -60,19 +60,25 @@ export function Hero() {
                   Hakkımızda
                 </motion.button>
             </motion.div>
-            {/* Removed inline scroll-down buttons per request */}
-            <div className="mt-10 grid grid-cols-3 gap-6 text-sm text-gray-500 dark:text-gray-400">
-              <div>
-                <div className="text-2xl font-semibold text-black dark:text-white">10+</div>
-                Yıl Tecrübe
+            {/* Avukat kartları */}
+            <div className="mt-10 grid sm:grid-cols-2 gap-6">
+              <div className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-neutral-900 p-6">
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-full bg-brand-gold/20 text-[var(--fg)] flex items-center justify-center font-semibold">Av</div>
+                  <div>
+                    <div className="font-medium">Av. İsim Soyisim</div>
+                    <div className="text-sm text-gray-500 dark:text-gray-400">Kurucu Ortak</div>
+                  </div>
+                </div>
               </div>
-              <div>
-                <div className="text-2xl font-semibold text-black dark:text-white">200+</div>
-                Dava ve Dosya
-              </div>
-              <div>
-                <div className="text-2xl font-semibold text-black dark:text-white">%98</div>
-                Memnuniyet
+              <div className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-neutral-900 p-6">
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-full bg-brand-gold/20 text-[var(--fg)] flex items-center justify-center font-semibold">Av</div>
+                  <div>
+                    <div className="font-medium">Av. İsim Soyisim</div>
+                    <div className="text-sm text-gray-500 dark:text-gray-400">Avukat</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -96,7 +102,7 @@ export function Hero() {
         </div>
       </div>
       {/* Centered bottom scroll-down button */}
-      <ScrollDownButton targetId="uzmanlik" floating />
+      <ScrollDownButton targetId="uzmanlik" label="Uzmanlık Alanlarımız" floating />
     </section>
   );
 }
