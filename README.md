@@ -7,7 +7,7 @@ Profesyonel, minimalist ve şık bir hukuk sitesi. Next.js (App Router), Tailwin
 - Minimalist tipografi (Playfair Display + Inter)
 - İnce animasyonlar (Framer Motion)
 - İletişim formu (Vercel Serverless API — stub)
-- Sitemap ve robotsasdasd
+- Sitemap ve robots
 
 ## Geliştirme
 

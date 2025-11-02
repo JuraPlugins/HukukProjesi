@@ -10,8 +10,7 @@ export function ThemeToggle() {
     try {
       const html = document.documentElement;
       const stored = localStorage.getItem("theme");
-      const system = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      const current = stored ? stored === "dark" : html.classList.contains("dark") || system;
+      const current = stored ? stored === "dark" : html.classList.contains("dark");
       setIsDark(current);
     } catch {}
   }, []);

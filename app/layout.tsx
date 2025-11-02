@@ -4,6 +4,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import Script from "next/script";
+import { ChatWidget } from "@/components/ChatWidget";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" });
@@ -43,13 +44,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* Initial theme to avoid FOUC */}
         <Script id="theme-init" strategy="beforeInteractive">
-          {`(() => { try { const s = localStorage.getItem('theme'); const m = window.matchMedia('(prefers-color-scheme: dark)').matches; const d = s ? s === 'dark' : m; const el = document.documentElement; el.classList.toggle('dark', d); } catch(_){} })();`}
+          {`(() => { try { const s = localStorage.getItem('theme'); const d = s ? s === 'dark' : false; const el = document.documentElement; el.classList.toggle('dark', d); } catch(_){} })();`}
         </Script>
       </head>
       <body className="min-h-dvh flex flex-col bg-white text-black dark:bg-[#0B0B0B] dark:text-gray-100 selection:bg-brand-gold/20 selection:text-black">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <ChatWidget />
       </body>
     </html>
   );
