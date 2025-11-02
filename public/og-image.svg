@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#F7F6F3"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect x="80" y="120" width="120" height="120" rx="20" fill="#0B0B0B"/>
+  <path d="M98 220L140 140L182 220" stroke="#BFA36F" stroke-width="6" fill="none"/>
+  <path d="M112 205H168" stroke="#ffffff" stroke-width="4"/>
+  <text x="240" y="180" font-family="'Playfair Display', Georgia, serif" font-size="64" fill="#0B0B0B">Alkan Hukuk</text>
+  <text x="240" y="230" font-family="Inter, Arial, sans-serif" font-size="28" fill="#6B7280">Avukatlık ve Danışmanlık</text>
+  <rect x="240" y="260" width="720" height="2" fill="#E5E7EB"/>
+  <text x="240" y="310" font-family="Inter, Arial, sans-serif" font-size="24" fill="#0B0B0B">Güven, Şeffaflık ve Sonuç Odaklı Hukuk Hizmetleri</text>
+</svg>
